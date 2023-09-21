@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+apt update
+apt upgrade
+
+apt install openssh-server
+
+# Change PasswordAuthentication to no
+sed -i 's/#PasswordAuthentication.*/PasswordAuthentication no/' /etc/ssh/sshd_config
+sed -i 's/#PermitRootLogin.*/PermitRootLogin no/' /etc/ssh/sshd_config
+sed -i 's/X11Forwarding.*/X11Forwarding no/' /etc/ssh/sshd_config
+# TODO: Change these so they work whether the line is commented or not
+
+# Add my public key(s) to ~/.ssh/authorized_keys
+
+ufw allow ssh
+
+service ssh restart
