@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+watch --no-title --interval=600 'curl --silent https://us.wttr.in/Washington?format="\n+%l:\n\n++++%c,+%w+wind+speed+\n++++%t+feels+like+%f\n++++Sunrise:+%S\n++++Sun+set:+%s\n\n" && date "+ Last updated: %X"'
+

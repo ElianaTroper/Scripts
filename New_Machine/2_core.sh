@@ -1,0 +1,1 @@
+/home/troper/Scripts/Setup/install/set/core.sh

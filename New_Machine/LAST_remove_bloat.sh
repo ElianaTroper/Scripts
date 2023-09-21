@@ -1,0 +1,1 @@
+../Setup/remove_bloat.sh

@@ -1,3 +1,4 @@
 *.swp
+*,pub
 
 install/signal-desktop-keyring.gpg
