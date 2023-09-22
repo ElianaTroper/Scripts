@@ -18,3 +18,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
 # TODO: Run linter install script
 brew install --cask rectangle
+
+# Installs fonts XXX: Untested, might need sudo in the script
+rm -r $HOME/Library/Fonts
+ln -s $HOME/Configs/Fonts $Home/Library/Fonts
